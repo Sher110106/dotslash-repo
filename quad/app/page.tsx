@@ -1,3 +1,4 @@
+"use client"
 import { GeistSans } from "geist/font/sans";
 import { ThemeProvider } from "next-themes";
 import "./globals.css";
@@ -15,8 +16,7 @@ import first from "@/app/first.png";
 const navItems = [
   { label: "Home", href: "#" },
   { label: "About", href: "#about" },
-  { label: "Services", href: "#services" },
-  { label: "Contact Us", href: "#contact" },
+  
 ];
 
 const stats = [
@@ -32,11 +32,11 @@ const services = [
     description: "Lorem ipsum dolor sit amet consectetur Convallis est",
   },
   {
-    title: "Psychotherapy",
+    title: "Counseller A.I.",
     description: "Lorem ipsum dolor sit amet consectetur Convallis est",
   },
   {
-    title: "Support Groups",
+    title: "Parental Alerts",
     description: "Lorem ipsum dolor sit amet consectetur Convallis est",
   },
 ];
@@ -94,7 +94,7 @@ export default function Page() {
                     </NavigationMenuList>
                   </NavigationMenu>
                   <Button className="bg-x-2 text-white hover:bg-x-2/90">
-                    Login/Sign Up
+                    Log In
                   </Button>
                 </nav>
               </header>

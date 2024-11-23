@@ -1,9 +1,11 @@
-export default async function Layout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+import '../globals.css';
+
+export default function Layout({ children }: { children: React.ReactNode }) {
+  
+
   return (
-    <div className="max-w-7xl flex flex-col gap-12 items-start">{children}</div>
+    <html lang="en"  >
+      <body className="bg-background text-foreground">{children}</body>
+    </html>
   );
 }
