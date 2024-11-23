@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Questionnaire</title>
+  </head>
+  <body>
+    <h1>Mental Health Questionnaire</h1>
+    <form method="POST" action="/questionnaire">
+      {% for question in questions %}
+      <label>{{ loop.index }}. {{ question }}</label><br />
+      <textarea name="answer{{ loop.index }}" rows="4" cols="50"></textarea
+      ><br /><br />
+      {% endfor %}
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
